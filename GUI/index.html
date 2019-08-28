@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/Chart.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/libros.js"></script>
+  </head>
+
+  <body>
+    <ul id="slide-out" class="sidenav blue-deg sidenav-fixed" >
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img >
+          </div>
+          <a href="#user">
+            <img class="circle">
+          </a>
+          <a href="#name">
+            <h4 class="">Equipo chingon</h4>
+          </a>
+          <a href="#email">
+            <span class=" email">Redes 2: </span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="#!"class="white-text">Contador de palabras con hilos</a>
+      </li>
+
+    </ul>
+
+    <div class="container ">
+        <h5>Practica 1: Contador de palabras en libros con hilos.</h5>
+    <div id="charts"></div>
+      <!--<div class="row">
+        <div class="col s12 m12 l6">
+          <h5>Aqui pondremos los datos</h5>
+        </div>
+        <div class="col s10 m10 l6 center-align">
+            <canvas id="myChart" width="1200" height="1200"></canvas>
+        </div>
+      </div>-->
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script>var elems = document.querySelectorAll('.sidenav'); M.Sidenav.init(elems, options);</script>
+    <script>document.onload(get_libros())</script>
+  </body>
+
+</html>

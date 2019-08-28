@@ -1,0 +1,26 @@
+
+@media only screen and (min-width: 1200px){
+    header, body, footer {
+        padding-left: 300px;
+        color: black
+    }
+}
+.blue-deg{
+    /*background: linear-gradient(to left, #32727f, #171f3b);*/
+    background-image: url(../img/abc.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    min-height: 100vh;
+    width: 80%;
+}
+
+a{color: white;}
+
+.row{
+    margin:50px 0px!important;
+    text-align:center;
+}

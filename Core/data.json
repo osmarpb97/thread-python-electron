@@ -1,0 +1,46 @@
+[
+    {
+        "regalos": 0,
+        "besos": 0,
+        "cachondeo": 1,
+        "delicioso": 0,
+        "compañia": 0,
+        "confianza": 0,
+        "comunicación": 0,
+        "pasión": 0,
+        "apoyo": 0
+    },
+    {
+        "regalos": 0,
+        "besos": 1,
+        "cachondeo": 1,
+        "delicioso": 0,
+        "compañia": 0,
+        "confianza": 0,
+        "comunicación": 0,
+        "pasión": 0,
+        "apoyo": 0
+    },
+    {
+        "regalos": 0,
+        "besos": 0,
+        "cachondeo": 1,
+        "delicioso": 0,
+        "compañia": 0,
+        "confianza": 0,
+        "comunicación": 0,
+        "pasión": 0,
+        "apoyo": 0
+    },
+    {
+        "regalos": 2,
+        "besos": 3,
+        "cachondeo": 2,
+        "delicioso": 0,
+        "compañia": 0,
+        "confianza": 0,
+        "comunicación": 0,
+        "pasión": 0,
+        "apoyo": 0
+    }
+]
