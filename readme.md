@@ -13,7 +13,7 @@
 
 
 
-## Prerequisitos
+## Prerequisites
 Before executing this project, you will need to install additional software on your computer.
 
 ## Python 3
@@ -52,7 +52,7 @@ the creation of files with the script, so we execute it manually, which will cre
     python3 libros_threand.py
 ```
 
-#### 6. Iniciamos la GUI :
+#### 6. Start the GUI :
 
 ```sh
     cd ../GUI/
