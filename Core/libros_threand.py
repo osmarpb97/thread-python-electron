@@ -10,18 +10,19 @@ def guardarDatos(f):
 def buscar_palabra_en_diccionario(nombre_libro,diccionario):
     contador={}
     with open(nombre_libro,encoding="utf-8") as archivo:#Abrimos el archivo
+      for palabra_buscar in diccionario:
+        contador[palabra_buscar]=0  
       for linea in archivo:#Linea por linea
         palabras= str(linea).split()
-        for palabra_buscar in diccionario:
-          contador[palabra_buscar]=0
-          for palabra in palabras:
-            if (palabra==palabra_buscar):
-              contador[palabra_buscar]+=1
+        for palabra in palabras:
+          if (palabra in diccionario):
+            contador[palabra]+=1
+      
     return contador#Retrona un diccionario con la palabra y el numero de veces que se repite
 
    
 datos = queue.Queue()
-palabras=['regalos','besos','cachondeo','delicioso','compañia','confianza','comunicación','pasión','apoyo']
+palabras=['or','on','regalos','besos','cachondeo','delicioso','compañia','confianza','comunicación','pasión','apoyo']
 path = './libros/'#Path de la ruta 
 numero_hilos=len(glob.glob(os.path.join(path, '*.txt')))
 hilo = [None]*numero_hilos
