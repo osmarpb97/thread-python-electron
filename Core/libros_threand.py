@@ -30,6 +30,8 @@ abc=[None]*numero_hilos
 for it,filename in enumerate(glob.glob(os.path.join(path, '*.txt'))):#Solo txt
   hilo[it]= threading.Thread(name="Hilo: %s" %it,target=buscar_palabra_en_diccionario,args=(filename,palabras))
   hilo[it].start()
+  
+for it,filename in enumerate(glob.glob(os.path.join(path, '*.txt'))):
   hilo[it].join()
   abc[it]=datos.get()
 
